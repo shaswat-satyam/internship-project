@@ -1,913 +1,270 @@
-<!DOCTYPE html>
-<!-- saved from url=(0059)https://internshipproject.bubbleapps.io/version-test/tablet -->
-<html lang="en" class="wf-adlamdisplay-n4-active wf-lato-n7-active wf-roboto-n4-active wf-roboto-n9-active wf-roboto-n7-active wf-ubuntu-n4-active wf-lato-n4-active wf-active b-root" style="height: 100%;"
-    style="
-    height: 100%;
-    --font_default: 'Roboto';
-    --color_text_default: rgba(9, 23, 71, 1);
-    --color_text_default_rgb: 9, 23, 71;
-    --color_alert_default: rgba(250, 181, 21, 1);
-    --color_alert_default_rgb: 250, 181, 21;
-    --color_primary_default: rgba(255, 255, 255, 1);
-    --color_primary_default_rgb: 255, 255, 255;
-    --color_success_default: rgba(23, 219, 78, 1);
-    --color_success_default_rgb: 23, 219, 78;
-    --color_surface_default: rgba(240, 235, 235, 1);
-    --color_surface_default_rgb: 240, 235, 235;
-    --color_background_default: rgba(255, 255, 255, 1);
-    --color_background_default_rgb: 255, 255, 255;
-    --color_destructive_default: rgba(255, 0, 0, 1);
-    --color_destructive_default_rgb: 255, 0, 0;
-    --color_primary_contrast_default: rgba(255, 67, 67, 1);
-    --color_primary_contrast_default_rgb: 255, 67, 67;
-    --color_bTHDb_default: rgba(0, 0, 0, 1);
-    --color_bTHDb_default_rgb: 0, 0, 0;
-">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <title>Bubble | No-code apps</title>
-        <script type="text/javascript">
-            window.bubble_session_uid = "1707442323146x205632272843177180";
-        </script>
-        <script type="text/javascript">
-            window.headers_source_maps = [];
-        </script>
-        <script type="text/javascript">
-            window.load_error_log = [];
-            window.onerror = function load_error_function(msg, error_url, line, col) {
-                return window.load_error_log.push({ msg: msg, error_url: error_url, line: line, col: col });
-            };
-        </script>
-        <meta name="referrer" content="origin" />
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["pre_early_js"] = Date.now();
-        </script>
-        <script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./Bubble _ No-code tablet apps_files/early.js.download"></script>
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["post_early_js"] = Date.now();
-        </script>
-        <link rel="stylesheet" href="./Bubble _ No-code tablet apps_files/css" />
-        <script type="text/javascript">
-            (function () {
-                function onWebFontFinish() {
-                    window.google_web_fonts_active = true;
-                    if (window.google_web_fonts_active_cb) {
-                        window.google_web_fonts_active_cb();
-                    }
-                    (function fontface_loaded_snippet(font) {
-                        if (window.fontface_loaded == null) {
-                            window.fontface_loaded = {};
-                        }
-                        if (font != null) {
-                            window.fontface_loaded[font] = true;
-                        } else {
-                            window.all_fontface_loaded = true;
-                        }
-                        if (window.fontface_webfonts_loaded_cb) {
-                            return window.fontface_webfonts_loaded_cb(font);
-                        }
-                    })();
-                }
-                var WebFontConfig = {
-                    google: { families: ["ADLaM Display:regular", "ADLaM Display:400", "Lato:regular", "Lato:700", "Roboto:regular", "Roboto:900", "Roboto:700", "Ubuntu:regular"] },
-                    active: function () {
-                        onWebFontFinish();
-                    },
-                    inactive: function () {
-                        console.log("Failed to load all the fonts");
-                        onWebFontFinish();
-                    },
-                    fontinactive: function (family_name, fvd) {
-                        console.log("fontinactive being called for " + family_name + ", Google says the fonts didnt render");
-                        onWebFontFinish();
-                    },
-                };
-                window.WebFont.load(WebFontConfig);
-            })();
-        </script>
-        <script>
-            (function initialize_data() {
-                var xhr = new XMLHttpRequest();
-                xhr.onreadystatechange = function () {
-                    if (this.readyState === 4 && this.status === 200) {
-                        var data = JSON.parse(this.responseText);
-
-                        function init_data() {
-                            data.forEach(function (d) {
-                                Lib().db_instance().initialize_data(d.id, d.data, d.type, d.version);
-                            });
-                        }
-
-                        if (window.Lib) {
-                            init_data();
-                        } else {
-                            window.Lib_post_load = init_data;
-                        }
-                    }
-                };
-                xhr.open("GET", "https://internshipproject.bubbleapps.io/version-test/api/1.1/init/data?location=" + encodeURIComponent(window.location.href), true);
-                xhr.send();
-            })();
-        </script>
-        <script type="text/javascript">
-            window.gm_key = "AIzaSyDrc7Z2Xh0LNmHty4bO9Jine0mnKpx6p9Q";
-        </script>
-        <script type="text/javascript">
-            window.glrl_key_status = false;
-        </script>
-        <script type="text/javascript">
-            window.bubble_page_load_id = "1707447035667x1056";
-        </script>
-        <script type="text/javascript">
-            window.bubble_plp_token = "Ud6HkE1+ke9dWPuhv34/N/2QMMI1oCvBVpKfGDGQK6k=";
-        </script>
-        <link rel="icon" type="image/png" href="./assets/svg/logo.svg" />
-        <meta name="fragment" content="!" />
-        <meta name="description" content="Bubble introduces a new way to build a web application. It’s a point-and-click programming tool. Bubble hosts all applications on its cloud platform." />
-        <meta name="description" content="Bubble introduces a new way to build a web application. It’s a point-and-click programming tool. Bubble hosts all applications on its cloud platform." />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="og:title" content="Bubble - Visual Programming" />
-        <meta name="twitter:title" content="Bubble - Visual Programming" />
-        <meta property="og:site_name" content="Bubble" />
-        <meta name="twitter:site_name" content="Bubble" />
-        <meta property="og:description" content="Build stuff without code and launch a startup without a tech-cofounder! Bubble is a visual programing language. Instead of typing code, use a visual editor to build applications. " />
-        <meta name="twitter:description" content="Build stuff without code and launch a startup without a tech-cofounder! Bubble is a visual programing language. Instead of typing code, use a visual editor to build applications. " />
-        <link rel="image_src" href="https://e26f45f05236d08ffd798a05062a5b5d.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png" />
-        <meta property="og:image" content="https://e26f45f05236d08ffd798a05062a5b5d.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png" />
-        <meta name="twitter:image:src" content="https://e26f45f05236d08ffd798a05062a5b5d.cdn.bubble.io/f1673991650471x907829260206606500/URL%20Preview%20Image%20%E2%80%93%20Meta%20%E2%80%93%20Tagline.png" />
-        <meta property="og:url" content="https://internshipproject.bubbleapps.io/version-test/tablet" />
-        <meta property="og:type" content="website" />
-        <meta property="fb:app_id" content="340887986039814" />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <script type="text/javascript">
-            window._p = '{"id":"app_free2","no_branding":false,"import_export_csv":false,"custom_domain":false}';
-        </script>
-        <script type="text/javascript">
-            window.bubble_page_name = "tablet";
-        </script>
-        <link type="text/css" href="./Bubble _ No-code tablet apps_files/run.css" rel="stylesheet" />
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["pre_run_js"] = Date.now();
-        </script>
-        <script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./Bubble _ No-code tablet apps_files/pre_run_jquery.js.download"></script>
-        <script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./Bubble _ No-code tablet apps_files/run.js.download"></script>
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["post_run_js"] = Date.now();
-        </script>
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["pre_static_js"] = Date.now();
-        </script>
-        <script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./Bubble _ No-code tablet apps_files/static.js.download"></script>
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["post_static_js"] = Date.now();
-        </script>
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["pre_dynamic_js"] = Date.now();
-        </script>
-        <script type="text/javascript" crossorigin="anonymous" charset="UTF-8" src="./Bubble _ No-code tablet apps_files/dynamic.js.download"></script>
-        <script type="text/javascript">
-            if (!window._bubble_page_load_data) {
-                window._bubble_page_load_data = {};
-            }
-            if (!window._bubble_page_load_data.js_execution_timings) {
-                window._bubble_page_load_data.js_execution_timings = {};
-            }
-            window._bubble_page_load_data.js_execution_timings["post_dynamic_js"] = Date.now();
-        </script>
-        <script type="text/javascript">
-            window._bubble_page_load_data.js_execution_timings.plugin_js_start_execution = Date.now();
-        </script>
-        <script type="text/javascript">
-            window._bubble_page_load_data.js_execution_timings.plugin_js_end_execution = Date.now();
-        </script>
-        <style>
-            .a1707447037177x4865.a1707447037177x4865::-webkit-input-placeholder {
-                color: rgba(var(--color_text_default_rgb), 0.36);
-            }
-            .a1707447037177x4865.a1707447037177x4865::-moz-placeholder {
-                color: rgba(var(--color_text_default_rgb), 0.36);
-                opacity: 1;
-            }
-            .a1707447037177x4865.a1707447037177x4865:-ms-input-placeholder {
-                color: rgba(var(--color_text_default_rgb), 0.36) !important;
-            }
-            .a1707447037177x4865.a1707447037177x4865:-moz-placeholder {
-                color: rgba(var(--color_text_default_rgb), 0.36);
-                opacity: 1;
-            }
-        </style>
-    </head>
-    <body style="height: 100%;">
-        <script type="text/javascript">
-            window.addEventListener("DOMContentLoaded", function () {
-                if (window.appquery == null) {
-                    css = document.createElement("style");
-                    css.type = "text/css";
-                    css.appendChild(document.createTextNode(".warning-message-failure {padding: 30px; line-height: 1.5; white-space: pre; z-index: 1000000; position: fixed; width: 100%; height: 100%; background: white;}"));
-                    document.getElementsByTagName("head")[0].appendChild(css);
-                    var newDiv = document.createElement("div");
-                    newDiv.className = "warning-message-failure";
-                    newDiv.innerHTML =
-                        "Your browser was unable to load some necessary resources, contact your IT network administrator and ask them to allow access to <br><br>     d3dqmih97rcqmh.cloudfront.net <br>     e26f45f05236d08ffd798a05062a5b5d.cdn.bubble.io/ <br>     d1muf25xaso8hp.cloudfront.net";
-                    document.body.appendChild(newDiv);
-                    httpRequest = new XMLHttpRequest();
-                    httpRequest.open("POST", "/user/m", true);
-                    httpRequest.setRequestHeader("Content-Type", "application/json");
-                    httpRequest.send(JSON.stringify({ measures: { page_load_error: 1, url: document.location.href, errors: window.load_error_log } }));
-                }
-            });
-        </script>
-        <script type="text/javascript">
-            window.addEventListener("DOMContentLoaded", function () {
-                if (window.appquery && window.app == null) {
-                    css = document.createElement("style");
-                    css.type = "text/css";
-                    css.appendChild(document.createTextNode(".warning-message-failure {padding: 30px; line-height: 1.5; white-space: pre; z-index: 1000000; position: fixed; width: 100%; height: 100%; background: white;}"));
-                    document.getElementsByTagName("head")[0].appendChild(css);
-                    var newDiv = document.createElement("div");
-                    newDiv.className = "warning-message-failure";
-                    newDiv.innerHTML = "Your browser was unable to load the application data. We've been notified of the issue. Please try again in a few moments and make sure not to use ad-blockers.";
-                    document.body.appendChild(newDiv);
-                }
-            });
-        </script>
-        <img style="display: none;" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />
-
-        <div class="bubble-element Page baTaIaHaM bubble-r-container-wrapper main-page">
-            <div class="bubble-r-container relative">
-                <div class="bubble-element Group baTaIaMn bubble-r-container flex row">
-                    <div id="sideMenu" class="bubble-element Group baTaIaMj bubble-r-container flex column">
-                        <div class="bubble-element Group baTaIaIt bubble-r-container flex column">
-                            <h2 class="bubble-element Text baTaIaIx bubble-r-vertical-center"><div>Dashboard</div></h2>
-                            <div class="bubble-element Group baTaIaIy bubble-r-container flex row">
-                                <div class="bubble-element Group baTaIaIz bubble-r-container flex column">
-                                    <div class="bubble-element Group baTaIaJaD bubble-r-container flex column">
-                                        <div class="bubble-element Group baTaIaJaE bubble-r-container flex column">
-                                            <div class="bubble-element Group baTaIaJaF bubble-r-container flex row">
-                                                <div class="bubble-element Group baTaIaJaJ bubble-r-container flex column" style="background-color: rgb(255, 222, 188);">
-                                                    <div class="bubble-element Text baTaIaJaK bubble-r-vertical-center"><div>Available Position</div></div>
-                                                    <div class="bubble-element Text baTaIaJaL bubble-r-vertical-center"><div>24</div></div>
-                                                    <div class="bubble-element Text baTaIaJaP bubble-r-vertical-center"><div>4 Urgently needed</div></div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaJaX bubble-r-container flex column" style="background-color: rgb(159, 205, 240);">
-                                                    <div class="bubble-element Text baTaIaJb bubble-r-vertical-center"><div>Job Open</div></div>
-                                                    <div class="bubble-element Text baTaIaJc bubble-r-vertical-center"><div>10</div></div>
-                                                    <div class="bubble-element Text baTaIaJd bubble-r-vertical-center"><div>4 Active hiring</div></div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaJaQ bubble-r-container flex column" style="background-color: rgb(251, 175, 229);">
-                                                    <div class="bubble-element Text baTaIaJaR bubble-r-vertical-center"><div>New Employee</div></div>
-                                                    <div class="bubble-element Text baTaIaJaV bubble-r-vertical-center"><div>24</div></div>
-                                                    <div class="bubble-element Text baTaIaJaW bubble-r-vertical-center"><div>4 Department</div></div>
-                                                </div>
-                                            </div>
-                                            <div class="bubble-element Group baTaIaJh bubble-r-container flex row">
-                                                <div class="bubble-element Group baTaIaJi bubble-r-container flex column">
-                                                    <div class="bubble-element Text baTaIaJj bubble-r-vertical-center"><div>Total Employee</div></div>
-                                                    <div class="bubble-element Text baTaIaJn bubble-r-vertical-center"><div>216</div></div>
-                                                    <div class="bubble-element Text baTaIaJo bubble-r-vertical-center"><div>120 Men 96 Women</div></div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaJp bubble-r-container flex column">
-                                                    <div class="bubble-element Text baTaIaJt bubble-r-vertical-center"><div>Talent Request</div></div>
-                                                    <div class="bubble-element Text baTaIaJu bubble-r-vertical-center"><div>16</div></div>
-                                                    <div class="bubble-element Text baTaIaJv bubble-r-vertical-center"><div>6 Men 10 Women</div></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="bubble-element Group baTaIaJz bubble-r-container flex column">
-                                            <div class="bubble-element Group baTaIaOaC bubble-r-container flex column">
-                                                <div class="bubble-element Group baTaIaKaA bubble-r-container flex row">
-                                                    <div class="bubble-element Text baTaIaKaB bubble-r-vertical-center"><div>Annoucement</div></div>
-                                                    <div
-                                                        class="bubble-element DateInput date_picker_element clickable-element"
-                                                        style="
-                                                            align-self: center;
-                                                            min-width: 135px;
-                                                            max-width: 135px;
-                                                            order: 2;
-                                                            min-height: 24px;
-                                                            max-height: 24px;
-                                                            width: 135px;
-                                                            flex-grow: 1;
-                                                            height: 24px;
-                                                            margin: 0px;
-                                                            z-index: 3;
-                                                            overflow: visible;
-                                                            opacity: 1;
-                                                        "
-                                                    >
-                                                        <input
-                                                            type="text"
-                                                            class="date_div picker__input a1707447037177x4865"
-                                                            placeholder="2/09/2024"
-                                                            readonly=""
-                                                            id="P2058559380"
-                                                            aria-haspopup="true"
-                                                            aria-expanded="false"
-                                                            aria-readonly="false"
-                                                            aria-owns="P2058559380_root"
-                                                            style="
-                                                                border-width: 2px;
-                                                                border-style: solid;
-                                                                border-color: rgba(var(--color_text_default_rgb), 0.15);
-                                                                border-image: initial;
-                                                                background-color: transparent;
-                                                                cursor: pointer;
-                                                                height: calc(100% - 2px);
-                                                                box-sizing: content-box;
-                                                                width: calc(100% - 32px);
-                                                                border-radius: 5px;
-                                                                font-family: var(--font_default);
-                                                                font-size: 14px;
-                                                                font-weight: 400;
-                                                                color: var(--color_text_default);
-                                                                padding: 0px 20px 0px 10px;
-                                                            "
-                                                        />
-                                                    </div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaKaG bubble-r-container flex row" style="background-color: rgb(212, 212, 212);">
-                                                    <div class="bubble-element Group baTaIaKaH bubble-r-container flex column">
-                                                        <div class="bubble-element Text baTaIaKaL bubble-r-vertical-center"><div>Outing Schedule for every Department</div></div>
-                                                        <div class="bubble-element Text baTaIaKaM bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                    </div>
-                                                    <div class="bubble-element Group baTaIaKaN bubble-r-container flex row">
-                                                        <button class="bubble-element Icon baTaIaKaR" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/pin.svg" alt="" srcset="">
-                                                        </button>
-                                                        <button class="bubble-element Icon baTaIaKaS" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaUaJ bubble-r-container flex row" style="background-color: rgb(212, 212, 212);">
-                                                    <div class="bubble-element Group baTaIaUaO bubble-r-container flex column">
-                                                        <div class="bubble-element Text baTaIaUaP bubble-r-vertical-center"><div>Outing Schedule for every Department</div></div>
-                                                        <div class="bubble-element Text baTaIaUaT bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                    </div>
-                                                    <div class="bubble-element Group baTaIaUaU bubble-r-container flex row">
-                                                        <button class="bubble-element Icon baTaIaUaV" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/pin.svg" alt="" srcset="">
-                                                        </button>
-                                                        <button class="bubble-element Icon baTaIaUaZ" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaUb bubble-r-container flex row" style="background-color: rgb(212, 212, 212);">
-                                                    <div class="bubble-element Group baTaIaUg bubble-r-container flex column">
-                                                        <div class="bubble-element Text baTaIaUh bubble-r-vertical-center"><div>Outing Schedule for every Department</div></div>
-                                                        <div class="bubble-element Text baTaIaUl bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                    </div>
-                                                    <div class="bubble-element Group baTaIaUm bubble-r-container flex row">
-                                                        <button class="bubble-element Icon baTaIaUn" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/pin.svg" alt="" srcset="">
-                                                        </button>
-                                                        <button class="bubble-element Icon baTaIaUr" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaUt bubble-r-container flex row" style="background-color: rgb(212, 212, 212);">
-                                                    <div class="bubble-element Group baTaIaUy bubble-r-container flex column">
-                                                        <div class="bubble-element Text baTaIaUz bubble-r-vertical-center"><div>Outing Schedule for every Department</div></div>
-                                                        <div class="bubble-element Text baTaIaVaD bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                    </div>
-                                                    <div class="bubble-element Group baTaIaVaE bubble-r-container flex row">
-                                                        <button class="bubble-element Icon baTaIaVaF" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/pin.svg" alt="" srcset="">
-                                                        </button>
-                                                        <button class="bubble-element Icon baTaIaVaJ" tabindex="" style="display: flex;">
-                                                            <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="bubble-element Button baTaIaKw" style="box-shadow: 0px 7px 30px -10px rgba(var(--color_primary_default_rgb), 0.1); background-color: var(--color_primary_default);">
-                                                See All Annoucements
-                                            </button>
-                                        </div>
-                                        <div class="bubble-element Group baTaIaLaN bubble-r-container-wrapper" style="max-width: unset; max-height: unset; height: max-content;">
-                                            <div class="bubble-r-container flex row">
-                                                <div class="bubble-element Group baTaIaMaR bubble-r-container flex column" style="background-color: var(--color_text_default);">
-                                                    <div class="bubble-element Text baTaIaMc bubble-r-vertical-center" style="background-color: rgb(12, 31, 93);"><div>&nbsp; &nbsp; &nbsp; &nbsp;Recent Activity</div></div>
-                                                    <div class="bubble-element Group baTaIaMaV bubble-r-container flex column">
-                                                        <div class="bubble-element Text baTaIaMaX bubble-r-vertical-center"><div>10:40 AM, Thurs 08 Februray 2024</div></div>
-                                                        <div class="bubble-element Text baTaIaMaW bubble-r-vertical-center"><div>You Posted a New Job</div></div>
-                                                        <div class="bubble-element Text baTaIaMb bubble-r-vertical-center"><div>Kindly check the requirements and terms of work and make sure everything is right</div></div>
-                                                    </div>
-                                                    <div class="bubble-element Group baTaIaMd bubble-r-container relative">
-                                                        <div class="bubble-element Text baTaIaMi bubble-r-vertical-center"><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Today you made 12 Activities</div></div>
-                                                        <button class="bubble-element Button baTaIaMh" style="box-shadow: 0px 7px 30px -10px rgba(var(--color_primary_default_rgb), 0.1); background-color: rgb(240, 0, 0);">
-                                                            See All activity
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                                <div class="bubble-element Group baTaIaLaO bubble-r-container flex column">
-                                                    <div class="bubble-element Group baTaIaMaL bubble-r-container flex row">
-                                                        <div class="bubble-element Text baTaIaMaP bubble-r-vertical-center"><div>Upcoming Schedule</div></div>
-                                                        <div
-                                                            class="bubble-element DateInput date_picker_element clickable-element"
-                                                            style="
-                                                                align-self: center;
-                                                                min-width: 102px;
-                                                                max-width: 102px;
-                                                                order: 2;
-                                                                min-height: 24px;
-                                                                max-height: 24px;
-                                                                width: 102px;
-                                                                flex-grow: 1;
-                                                                height: 24px;
-                                                                margin: 0px 25px 0px 0px;
-                                                                z-index: 3;
-                                                                overflow: visible;
-                                                                opacity: 1;
-                                                            "
-                                                        >
-                                                            <input
-                                                                type="text"
-                                                                class="date_div picker__input a1707447037177x4865"
-                                                                placeholder="2/09/2024"
-                                                                readonly=""
-                                                                id="P1953202331"
-                                                                aria-haspopup="true"
-                                                                aria-expanded="false"
-                                                                aria-readonly="false"
-                                                                aria-owns="P1953202331_root"
-                                                                style="
-                                                                    border-width: 2px;
-                                                                    border-style: solid;
-                                                                    border-color: rgba(var(--color_text_default_rgb), 0.15);
-                                                                    border-image: initial;
-                                                                    background-color: transparent;
-                                                                    cursor: pointer;
-                                                                    height: calc(100% - 2px);
-                                                                    box-sizing: content-box;
-                                                                    width: calc(100% - 22px);
-                                                                    border-radius: 5px;
-                                                                    font-family: var(--font_default);
-                                                                    font-size: 14px;
-                                                                    font-weight: 400;
-                                                                    color: var(--color_text_default);
-                                                                    padding: 0px 10px;
-                                                                "
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div class="bubble-element Group baTaIaLaT bubble-r-container flex column">
-                                                        <div class="bubble-element Text baTaIaLaU bubble-r-vertical-center"><div>Priority</div></div>
-                                                        <div class="bubble-element Group baTaIaLaV bubble-r-container flex row" style="background-color: rgb(226, 223, 223);">
-                                                            <div class="bubble-element Group baTaIaLa bubble-r-container flex column">
-                                                                <div class="bubble-element Text baTaIaLb bubble-r-vertical-center"><div>Review Applications</div></div>
-                                                                <div class="bubble-element Text baTaIaLf bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                            </div>
-                                                            <button class="bubble-element Icon baTaIaLaZ" tabindex="" style="display: flex;">
-                                                                <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                            </button>
-                                                        </div>
-                                                        <div class="bubble-element Text baTaIaLg bubble-r-vertical-center"><div>Others</div></div>
-                                                        <div class="bubble-element Group baTaIaOh bubble-r-container flex row" style="background-color: rgb(226, 223, 223);">
-                                                            <div class="bubble-element Group baTaIaOn bubble-r-container flex column">
-                                                                <div class="bubble-element Text baTaIaOr bubble-r-vertical-center"><div>Review Applications</div></div>
-                                                                <div class="bubble-element Text baTaIaOs bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                            </div>
-                                                            <button class="bubble-element Icon baTaIaOm" tabindex="" style="display: flex;">
-                                                                <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                            </button>
-                                                        </div>
-                                                        <div class="bubble-element Group baTaIaPaV bubble-r-container flex row" style="background-color: rgb(226, 223, 223);">
-                                                            <div class="bubble-element Group baTaIaPb bubble-r-container flex column">
-                                                                <div class="bubble-element Text baTaIaPc bubble-r-vertical-center"><div>Review Applications</div></div>
-                                                                <div class="bubble-element Text baTaIaPd bubble-r-vertical-center"><div>5 Minutes ago</div></div>
-                                                            </div>
-                                                            <button class="bubble-element Icon baTaIaPaX" tabindex="" style="display: flex;">
-                                                                <img src="./assets/svg/options-horizontal.svg" alt="" srcset="">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <button class="bubble-element Button baTaIaLaP" style="box-shadow: 0px 7px 30px -10px rgba(var(--color_primary_default_rgb), 0.1); background-color: var(--color_primary_default);">
-                                                        Create a New Schedule
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bubble-element FloatingGroup baTaIaIaV floating-group bubble-r-container flex column">
-            <div class="bubble-element Group baTaIaIaZ bubble-r-container flex row">
-                <div class="bubble-element Group baTaIaIm bubble-r-container flex row">
-                    <div
-                        class="bubble-element AutocompleteDropdown"
-                        style="align-self: flex-start; min-width: 250px; max-width: 250px; order: 1; min-height: 48px; max-height: 48px; width: 250px; flex-grow: 1; height: 48px; margin: 0px; z-index: 4; overflow: visible; opacity: 1;"
-                    >
-                        <span class="twitter-typeahead" style="position: relative; display: inline-block; direction: ltr; height: 100%;">
-                            <input
-                                type="text"
-                                dir="ltr"
-                                style="
-                                    border-width: 1px;
-                                    border-style: solid;
-                                    border-color: rgba(var(--color_text_default_rgb), 0.15);
-                                    border-image: initial;
-                                    background: none 0% 0% / auto repeat scroll padding-box border-box rgba(0, 0, 0, 0);
-                                    box-sizing: border-box;
-                                    height: 100%;
-                                    width: 100%;
-                                    position: absolute;
-                                    top: 0px;
-                                    left: 0px;
-                                    box-shadow: none;
-                                    opacity: 1;
-                                    border-radius: 5px;
-                                    color: var(--color_text_default);
-                                    font-family: var(--font_default);
-                                    font-size: 14px;
-                                    font-weight: 400;
-                                    padding: 6px;
-                                "
-                                class="tt-hint a1707447037177x4865"
-                                readonly=""
-                                autocomplete="off"
-                                spellcheck="false"
-                                tabindex="-1"
-                            />
-                            <input
-                                type="text"
-                                placeholder="Start typing..."
-                                dir="ltr"
-                                style="
-                                    border-width: 1px;
-                                    border-style: solid;
-                                    border-color: rgba(var(--color_text_default_rgb), 0.15);
-                                    border-image: initial;
-                                    background-color: transparent;
-                                    box-sizing: border-box;
-                                    height: 100%;
-                                    width: 100%;
-                                    position: relative;
-                                    vertical-align: top;
-                                    border-radius: 5px;
-                                    font-family: var(--font_default);
-                                    font-size: 14px;
-                                    font-weight: 400;
-                                    color: var(--color_text_default);
-                                    padding: 6px;
-                                "
-                                class="tt-input a1707447037177x4865"
-                                autocomplete="off"
-                                spellcheck="false"
-                            />
-                            <pre
-                                aria-hidden="true"
-                                style="
-                                    position: absolute;
-                                    visibility: hidden;
-                                    white-space: pre;
-                                    font-family: Arial;
-                                    font-size: 13.3333px;
-                                    font-style: normal;
-                                    font-variant: normal;
-                                    font-weight: 400;
-                                    word-spacing: 0px;
-                                    letter-spacing: 0px;
-                                    text-indent: 0px;
-                                    text-rendering: auto;
-                                    text-transform: none;
-                                "
-                            ></pre>
-                        </span>
-                    </div>
-                    <button class="bubble-element Icon baTaIaIn" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/search.svg" alt="" srcset="">
-                    </button>
-                </div>
-                <div class="bubble-element Group baTaIaIa bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaIl" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/notification.svg" alt="" srcset="">
-                    </button>
-                    <div class="bubble-element Image baTaIaIg"><img src="./Bubble _ No-code tablet apps_files/379-200x200.jpg" alt="Profile" /></div>
-                    <button class="bubble-element Icon baTaIaIb" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/message.svg" alt="" srcset="">
-                    </button>
-                    <button class="bubble-element Icon baTaIaIf" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/chevron-down.svg" alt="" srcset="">
-                    </button>
-                    <div class="bubble-element Text baTaIaIh bubble-r-vertical-center"><div>Admiral John</div></div>
-                </div>
-            </div>
-            <div class="bubble-element Shape baTaIaIs" style="background-color: var(--color_surface_default);"></div>
-        </div>
-        <div id="sticky" class="bubble-element FloatingGroup baTaIaHaN floating-group bubble-r-container flex column" style="background-color: rgb(226, 224, 224);">
-            <div class="bubble-element Group baTaIaHaR bubble-r-container flex row">
-                <div class="bubble-element Image baTaIaHaT">
-                    <div class="aspect-ratio"></div>
-                    <img src="./Bubble _ No-code tablet apps_files/logo.svg" />
-                </div>
-            </div>
-            <div class="bubble-element Group baTaIaHp bubble-r-container flex column">
-                <div class="bubble-element Text baTaIaHq bubble-r-vertical-center"><div>Main Menu</div></div>
-                <div class="bubble-element Group baTaIaIaP bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaIaT" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/computer.svg" alt="" srcset="">
-                    </button>
-                </div>
-                <div class="bubble-element Group baTaIaIaJ bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaIaN" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/user-add.svg" alt="" srcset="">
-                    </button>
-                </div>
-                <div class="bubble-element Group baTaIaIaD bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaIaH" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/calendar.svg" alt="" srcset="">
-                    </button>
-                </div>
-                <div class="bubble-element Group baTaIaHx bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaIaB" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/users.svg" alt="" srcset="">
-                    </button>
-                </div>
-                <div class="bubble-element Group baTaIaHr bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaHv" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/circleci.svg" alt="" srcset="">
-                </div>
-            </div>
-            <div class="bubble-element Group baTaIaHaX bubble-r-container flex column">
-                <div class="bubble-element Group baTaIaHk bubble-r-container flex row">
-                    <div class="bubble-element Text baTaIaHl bubble-r-vertical-center"><div>Others</div></div>
-                </div>
-                <div class="bubble-element Group baTaIaHaY bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaHaZ" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/headphones.svg" alt="" srcset="">
-                    </button>
-                </div>
-                <div class="bubble-element Group baTaIaHe bubble-r-container flex row">
-                    <button class="bubble-element Icon baTaIaHf" tabindex="" style="display: flex;">
-                        <img src="./assets/svg/settings.svg" alt="" srcset="">
-                    </button>
-                </div>
-            </div>
-        </div>
-        <span
-            class="tt-dropdown-menu"
-            style="position: fixed; top: 47px; left: 90.1625px; z-index: 10000; display: none; right: initial; font-family: var(--font_default); font-size: 14px; min-width: 250px; border-radius: 5px; text-align: left;"
-        >
-            <div class="tt-dataset-0"></div>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Dashboard
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <style>
+   body {
+            font-family: 'Inter', sans-serif;
+        }
+  </style>
+ </head>
+ <body class="bg-gray-100">
+  <div class="flex flex-col h-screen">
+   <!-- Sidebar -->
+   <div class="flex flex-row">
+    <div class="w-16 bg-gray-800 h-screen p-4 space-y-6">
+     <!-- Sidebar content here -->
+     <div class="text-white">
+      <i class="fas fa-bars">
+      </i>
+     </div>
+     <div class="space-y-2">
+      <div class="text-gray-400">
+       <i class="fas fa-home">
+       </i>
+      </div>
+      <div class="text-gray-400">
+       <i class="fas fa-user-friends">
+       </i>
+      </div>
+      <div class="text-gray-400">
+       <i class="fas fa-envelope">
+       </i>
+      </div>
+      <div class="text-gray-400">
+       <i class="fas fa-chart-bar">
+       </i>
+      </div>
+      <div class="text-gray-400">
+       <i class="fas fa-cog">
+       </i>
+      </div>
+     </div>
+     <div class="text-gray-400">
+      <i class="fas fa-question-circle">
+      </i>
+     </div>
+     <div class="text-gray-400">
+      <i class="fas fa-power-off">
+      </i>
+     </div>
+    </div>
+    <!-- Main content -->
+    <div class="flex-1 p-10">
+     <div class="flex justify-between items-center">
+      <h1 class="text-4xl font-bold">
+       Dashboard
+      </h1>
+      <div class="flex items-center space-x-4">
+       <div class="bg-gray-200 rounded-full p-2">
+        <i class="fas fa-search text-gray-600">
+        </i>
+       </div>
+       <div>
+        <i class="fas fa-bell text-gray-600">
+        </i>
+       </div>
+       <div class="flex items-center space-x-2 border-l-2 pl-4">
+        <img alt="Profile picture placeholder" class="rounded-full" height="32" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-Z4nfEDaxRZMLLsvkUtarndlT/user-HEQW8znOgvSHX0At9Wit8Qry/img-zk8MJI5vsblBUtQeB0nwwZs0.png?st=2024-02-09T10%3A18%3A48Z&amp;se=2024-02-09T12%3A18%3A48Z&amp;sp=r&amp;sv=2021-08-06&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=6aaadede-4fb3-4698-a8f6-684d7786b067&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-02-09T10%3A12%3A50Z&amp;ske=2024-02-10T10%3A12%3A50Z&amp;sks=b&amp;skv=2021-08-06&amp;sig=KjeolwEo7IKVYfW86k0Cpe7HHDo9GYAdwjxPC%2B8kL98%3D" width="32"/>
+        <span>
+         Admiral John
         </span>
-        <div class="page-is-loaded"></div>
-        <!-- <div
-            style="
-                width: 128px !important;
-                position: fixed !important;
-                bottom: 10px !important;
-                right: 10px !important;
-                height: 29px !important;
-                z-index: 100000000000 !important;
-                box-shadow: 0px 0px 20px 0 #00000069 !important;
-                background: #0205d3 !important;
-                border-radius: 3px !important;
-            "
-        > -->
-            <!-- <div style="position: absolute;" class="notranslate" translate="no">
-                <div style="">
-                    <img alt="Bubble" src="./Bubble _ No-code tablet apps_files/banner-icon.svg" style="width: 15px !important; margin-top: 7px !important; margin-left: 6px !important; float: left;" />
-                    <div style="color: white; font-size: 12px; font-family: Arial, sans-serif; margin-top: 9px; float: left; margin-left: 8px; width: 95px; font-weight: bold;">Built on Bubble</div>
-                </div>
-            </div> -->
-            <!-- <a target="_blank" style="width: 100%; height: 100%; position: absolute;" href="https://bubble.io/?utm_source=app_mention&amp;utm_content=internshipproject"></a> -->
+        <i class="fas fa-chevron-down text-gray-600">
+        </i>
+       </div>
+      </div>
+     </div>
+     <div class="grid grid-cols-4 gap-4 mt-8">
+      <!-- Cards -->
+      <div class="bg-orange-200 p-4 rounded-lg">
+       <h2 class="text-lg font-semibold">
+        Available Position
+       </h2>
+       <p class="text-3xl font-bold">
+        24
+       </p>
+       <p class="text-sm">
+        4 Urgently needed
+       </p>
+      </div>
+      <div class="bg-yellow-200 p-4 rounded-lg">
+       <h2 class="text-lg font-semibold">
+        Job Open
+       </h2>
+       <p class="text-3xl font-bold">
+        10
+       </p>
+       <p class="text-sm">
+        4 Active hiring
+       </p>
+      </div>
+      <div class="bg-pink-200 p-4 rounded-lg">
+       <h2 class="text-lg font-semibold">
+        New Employee
+       </h2>
+       <p class="text-3xl font-bold">
+        24
+       </p>
+       <p class="text-sm">
+        4 Department
+       </p>
+      </div>
+      <div class="bg-purple-200 p-4 rounded-lg">
+       <h2 class="text-lg font-semibold">
+        Talent Request
+       </h2>
+       <p class="text-3xl font-bold">
+        16
+       </p>
+       <p class="text-sm">
+        0 Men
+       </p>
+       <p class="text-sm">
+        10 Women
+       </p>
+      </div>
+     </div>
+     <div class="grid grid-cols-3 gap-4 mt-8">
+      <!-- Total Employee -->
+      <div class="col-span-1 bg-white p-4 rounded-lg shadow">
+       <h2 class="text-lg font-semibold">
+        Total Employee
+       </h2>
+       <p class="text-5xl font-bold">
+        216
+       </p>
+       <p class="text-sm">
+        120 Men
+       </p>
+       <p class="text-sm">
+        90 Women
+       </p>
+      </div>
+      <!-- Announcements -->
+      <div class="col-span-2 bg-white p-4 rounded-lg shadow">
+       <h2 class="text-lg font-semibold">
+        Announcement
+       </h2>
+       <div class="space-y-4 mt-4">
+        <div class="flex justify-between items-center p-4 bg-gray-100 rounded">
+         <span>
+          Outing Schedule for every Department
+         </span>
+         <span class="text-xs">
+          5 Minutes ago
+         </span>
         </div>
-    </body>
-    <div class="picker" id="P2058559380_root" aria-hidden="true" style="width: 135px; font-family: var(--font_default); top: 0px; margin-top: 24px; max-width: 135px;">
-        <div class="picker__holder" tabindex="-1" style="transition: all 0.05s ease-in-out 0s; top: 486.6px; left: 520px;">
-            <div class="picker__frame">
-                <div class="picker__wrap">
-                    <div class="picker__box">
-                        <div class="picker__header">
-                            <div class="picker__month">February</div>
-                            <div class="picker__year">2024</div>
-                            <div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="P2058559380_table" title="Previous month"></div>
-                            <div class="picker__nav--next" data-nav="1" role="button" aria-controls="P2058559380_table" title="Next month"></div>
-                        </div>
-                        <table class="picker__table" id="P2058559380_table" role="grid" aria-controls="P2058559380" aria-readonly="true">
-                            <thead>
-                                <tr>
-                                    <th class="picker__weekday" scope="col" title="Sunday">Sun</th>
-                                    <th class="picker__weekday" scope="col" title="Monday">Mon</th>
-                                    <th class="picker__weekday" scope="col" title="Tuesday">Tue</th>
-                                    <th class="picker__weekday" scope="col" title="Wednesday">Wed</th>
-                                    <th class="picker__weekday" scope="col" title="Thursday">Thu</th>
-                                    <th class="picker__weekday" scope="col" title="Friday">Fri</th>
-                                    <th class="picker__weekday" scope="col" title="Saturday">Sat</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706380200000" role="gridcell" aria-label="1/28/2024">28</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706466600000" role="gridcell" aria-label="1/29/2024">29</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706553000000" role="gridcell" aria-label="1/30/2024">30</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706639400000" role="gridcell" aria-label="1/31/2024">31</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706725800000" role="gridcell" aria-label="2/01/2024">1</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706812200000" role="gridcell" aria-label="2/02/2024">2</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706898600000" role="gridcell" aria-label="2/03/2024">3</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706985000000" role="gridcell" aria-label="2/04/2024">4</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707071400000" role="gridcell" aria-label="2/05/2024">5</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707157800000" role="gridcell" aria-label="2/06/2024">6</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707244200000" role="gridcell" aria-label="2/07/2024">7</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707330600000" role="gridcell" aria-label="2/08/2024">8</div></td>
-                                    <td role="presentation">
-                                        <div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1707417000000" role="gridcell" aria-label="2/09/2024" aria-activedescendant="true">9</div>
-                                    </td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707503400000" role="gridcell" aria-label="2/10/2024">10</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707589800000" role="gridcell" aria-label="2/11/2024">11</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707676200000" role="gridcell" aria-label="2/12/2024">12</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707762600000" role="gridcell" aria-label="2/13/2024">13</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707849000000" role="gridcell" aria-label="2/14/2024">14</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707935400000" role="gridcell" aria-label="2/15/2024">15</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708021800000" role="gridcell" aria-label="2/16/2024">16</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708108200000" role="gridcell" aria-label="2/17/2024">17</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708194600000" role="gridcell" aria-label="2/18/2024">18</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708281000000" role="gridcell" aria-label="2/19/2024">19</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708367400000" role="gridcell" aria-label="2/20/2024">20</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708453800000" role="gridcell" aria-label="2/21/2024">21</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708540200000" role="gridcell" aria-label="2/22/2024">22</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708626600000" role="gridcell" aria-label="2/23/2024">23</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708713000000" role="gridcell" aria-label="2/24/2024">24</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708799400000" role="gridcell" aria-label="2/25/2024">25</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708885800000" role="gridcell" aria-label="2/26/2024">26</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708972200000" role="gridcell" aria-label="2/27/2024">27</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1709058600000" role="gridcell" aria-label="2/28/2024">28</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1709145000000" role="gridcell" aria-label="2/29/2024">29</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709231400000" role="gridcell" aria-label="3/01/2024">1</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709317800000" role="gridcell" aria-label="3/02/2024">2</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709404200000" role="gridcell" aria-label="3/03/2024">3</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709490600000" role="gridcell" aria-label="3/04/2024">4</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709577000000" role="gridcell" aria-label="3/05/2024">5</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709663400000" role="gridcell" aria-label="3/06/2024">6</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709749800000" role="gridcell" aria-label="3/07/2024">7</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709836200000" role="gridcell" aria-label="3/08/2024">8</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709922600000" role="gridcell" aria-label="3/09/2024">9</div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="picker__footer">
-                            <button class="picker__button--today" type="button" data-pick="1707417000000" disabled="" aria-controls="P2058559380">Today</button>
-                            <button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="P2058559380">Clear</button>
-                            <button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="P2058559380">Close</button>
-                        </div>
+        <div class="flex justify-between items-center p-4 bg-gray-100 rounded">
+         <span>
+          Outing Schedule for every Department
+         </span>
+         <span class="text-xs">
+          5 Minutes ago
+         </span>
+        </div>
+        <div class="flex justify-between items-center p-4 bg-gray-100 rounded">
+         <span>
+          Outing Schedule for every Department
+         </span>
+         <span class="text-xs">
+          5 Minutes ago
+         </span>
+        </div>
+        <div class="flex justify-between items-center p-4 bg-gray-100 rounded">
+         <span>
+          Outing Schedule for every Department
+         </span>
+         <span class="text-xs">
+          5 Minutes ago
+         </span>
+        </div>
+       </div>
+       <div class="text-center mt-4">
+        <button class="text-blue-600">
+         See All Announcements
+        </button>
+       </div>
+      </div>
+      
+     </div>
+     <div class="flex justify-center items-start p-8 space-x-8">
+        <!-- Recent Activity -->
+        <div class="bg-white rounded-lg shadow-lg p-6 w-1/3">
+            <div class="bg-blue-600 rounded-t-lg p-4 text-white">
+                <h2 class="text-lg font-semibold">Recent Activity</h2>
+            </div>
+            <div class="mt-4">
+                <p class="text-sm text-gray-600">10:40 AM, Thurs 09 February 2124</p>
+                <p class="text-sm font-semibold mt-2">You Posted a New Job</p>
+                <p class="text-sm text-gray-600 mt-1">Kindly check the requirements and terms of work and make sure everything is right</p>
+            </div>
+            <div class="mt-4">
+                <p class="text-sm text-gray-600">Today you made 12 Activities</p>
+            </div>
+            <div class="mt-4 text-right">
+                <button class="text-blue-600 text-sm font-semibold">See All Activity</button>
+            </div>
+        </div>
+
+        <!-- Upcoming Schedule -->
+        <div class="bg-white rounded-lg shadow-lg p-6 w-1/3">
+            <div class="flex justify-between items-center">
+                <h2 class="text-lg font-semibold text-gray-800">Upcoming Schedule</h2>
+                <p class="text-sm text-gray-600">2/09/2124</p>
+            </div>
+            <div class="mt-4">
+                <p class="text-sm font-semibold text-gray-800">Priority</p>
+                <div class="mt-2 p-4 bg-gray-100 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm font-semibold">Review Applications</p>
+                        <p class="text-xs text-gray-600">5 Mins ago</p>
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="picker" id="P1953202331_root" aria-hidden="true" style="width: 102px; font-family: var(--font_default); top: 0px; margin-top: 24px; max-width: 102px;">
-        <div class="picker__holder" tabindex="-1" style="transition: all 0.05s ease-in-out 0s; top: 922px; left: 520px;">
-            <div class="picker__frame">
-                <div class="picker__wrap">
-                    <div class="picker__box">
-                        <div class="picker__header">
-                            <div class="picker__month">February</div>
-                            <div class="picker__year">2024</div>
-                            <div class="picker__nav--prev" data-nav="-1" role="button" aria-controls="P1953202331_table" title="Previous month"></div>
-                            <div class="picker__nav--next" data-nav="1" role="button" aria-controls="P1953202331_table" title="Next month"></div>
-                        </div>
-                        <table class="picker__table" id="P1953202331_table" role="grid" aria-controls="P1953202331" aria-readonly="true">
-                            <thead>
-                                <tr>
-                                    <th class="picker__weekday" scope="col" title="Sunday">Sun</th>
-                                    <th class="picker__weekday" scope="col" title="Monday">Mon</th>
-                                    <th class="picker__weekday" scope="col" title="Tuesday">Tue</th>
-                                    <th class="picker__weekday" scope="col" title="Wednesday">Wed</th>
-                                    <th class="picker__weekday" scope="col" title="Thursday">Thu</th>
-                                    <th class="picker__weekday" scope="col" title="Friday">Fri</th>
-                                    <th class="picker__weekday" scope="col" title="Saturday">Sat</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706380200000" role="gridcell" aria-label="1/28/2024">28</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706466600000" role="gridcell" aria-label="1/29/2024">29</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706553000000" role="gridcell" aria-label="1/30/2024">30</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1706639400000" role="gridcell" aria-label="1/31/2024">31</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706725800000" role="gridcell" aria-label="2/01/2024">1</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706812200000" role="gridcell" aria-label="2/02/2024">2</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706898600000" role="gridcell" aria-label="2/03/2024">3</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1706985000000" role="gridcell" aria-label="2/04/2024">4</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707071400000" role="gridcell" aria-label="2/05/2024">5</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707157800000" role="gridcell" aria-label="2/06/2024">6</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707244200000" role="gridcell" aria-label="2/07/2024">7</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707330600000" role="gridcell" aria-label="2/08/2024">8</div></td>
-                                    <td role="presentation">
-                                        <div class="picker__day picker__day--infocus picker__day--today picker__day--highlighted" data-pick="1707417000000" role="gridcell" aria-label="2/09/2024" aria-activedescendant="true">9</div>
-                                    </td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707503400000" role="gridcell" aria-label="2/10/2024">10</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707589800000" role="gridcell" aria-label="2/11/2024">11</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707676200000" role="gridcell" aria-label="2/12/2024">12</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707762600000" role="gridcell" aria-label="2/13/2024">13</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707849000000" role="gridcell" aria-label="2/14/2024">14</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1707935400000" role="gridcell" aria-label="2/15/2024">15</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708021800000" role="gridcell" aria-label="2/16/2024">16</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708108200000" role="gridcell" aria-label="2/17/2024">17</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708194600000" role="gridcell" aria-label="2/18/2024">18</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708281000000" role="gridcell" aria-label="2/19/2024">19</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708367400000" role="gridcell" aria-label="2/20/2024">20</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708453800000" role="gridcell" aria-label="2/21/2024">21</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708540200000" role="gridcell" aria-label="2/22/2024">22</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708626600000" role="gridcell" aria-label="2/23/2024">23</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708713000000" role="gridcell" aria-label="2/24/2024">24</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708799400000" role="gridcell" aria-label="2/25/2024">25</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708885800000" role="gridcell" aria-label="2/26/2024">26</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1708972200000" role="gridcell" aria-label="2/27/2024">27</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1709058600000" role="gridcell" aria-label="2/28/2024">28</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--infocus" data-pick="1709145000000" role="gridcell" aria-label="2/29/2024">29</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709231400000" role="gridcell" aria-label="3/01/2024">1</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709317800000" role="gridcell" aria-label="3/02/2024">2</div></td>
-                                </tr>
-                                <tr>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709404200000" role="gridcell" aria-label="3/03/2024">3</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709490600000" role="gridcell" aria-label="3/04/2024">4</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709577000000" role="gridcell" aria-label="3/05/2024">5</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709663400000" role="gridcell" aria-label="3/06/2024">6</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709749800000" role="gridcell" aria-label="3/07/2024">7</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709836200000" role="gridcell" aria-label="3/08/2024">8</div></td>
-                                    <td role="presentation"><div class="picker__day picker__day--outfocus" data-pick="1709922600000" role="gridcell" aria-label="3/09/2024">9</div></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="picker__footer">
-                            <button class="picker__button--today" type="button" data-pick="1707417000000" disabled="" aria-controls="P1953202331">Today</button>
-                            <button class="picker__button--clear" type="button" data-clear="1" disabled="" aria-controls="P1953202331">Clear</button>
-                            <button class="picker__button--close" type="button" data-close="true" disabled="" aria-controls="P1953202331">Close</button>
-                        </div>
+            <div class="mt-4">
+                <p class="text-sm font-semibold text-gray-800">Others</p>
+                <div class="mt-2 p-4 bg-gray-100 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm font-semibold">Review Applications</p>
+                        <p class="text-xs text-gray-600">5 Mins ago</p>
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                    </div>
+                </div>
+                <div class="mt-2 p-4 bg-gray-100 rounded-lg">
+                    <div class="flex justify-between items-center">
+                        <p class="text-sm font-semibold">Review Applications</p>
+                        <p class="text-xs text-gray-600">5 Mins ago</p>
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
+                        <i class="fas fa-circle text-xs text-gray-400 mr-1"></i>
                     </div>
                 </div>
             </div>
+            <div class="mt-4 text-center">
+                <button class="text-blue-600 text-sm font-semibold">Create a New Schedule</button>
+            </div>
         </div>
     </div>
+    </div>
+   </div>
+  </div>
+ </body>
 </html>
